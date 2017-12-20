@@ -23,3 +23,6 @@ class ExList(list):
         newlist = ExList()
         self.foreach(lambda lst: lst.foreach(lambda ele: newlist.append(ele)))
         return newlist
+
+    def flatmap(self, f):
+        return self.map(f).flatten()
