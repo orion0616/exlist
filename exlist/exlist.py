@@ -18,3 +18,8 @@ class ExList(list):
         for ele in self:
             f(ele)
         return
+
+    def flatten(self):
+        newlist = ExList()
+        self.foreach(lambda lst: lst.foreach(lambda ele: newlist.append(ele)))
+        return newlist
