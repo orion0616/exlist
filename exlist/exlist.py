@@ -13,3 +13,8 @@ class ExList(list):
             return ini
         else:
             return ExList(self[1:]).fold(f(ini,self[0]),f)
+
+    def foreach(self, f):
+        for ele in self:
+            f(ele)
+        return
