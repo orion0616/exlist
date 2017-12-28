@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='exlist',
-    version='0.31',
+    version='0.4',
     description='Enable to use method chain on list',
     url='https://github.com/orion46/exlist.git',
     author='orion46',
