@@ -26,3 +26,12 @@ class ExList(list):
 
     def flatmap(self, f):
         return self.map(f).flatten()
+
+    def __getitem__(self,k):
+        return ExList(list.__getitem__(self,k))
+
+    def drop(self,i):
+        return self[i:]
+
+    def take(self,i):
+        return self[:i]
