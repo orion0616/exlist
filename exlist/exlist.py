@@ -28,7 +28,9 @@ class ExList(list):
         return self.map(f).flatten()
 
     def __getitem__(self,k):
-        return ExList(list.__getitem__(self,k))
+        if isinstance(k,slice):
+            return ExList(list.__getitem__(self,k))
+        return list.__getitem__(self,k)
 
     def drop(self,i):
         return self[i:]
