@@ -1,5 +1,5 @@
 # ExList
-[![CircleCI](https://circleci.com/gh/orion46/exlist.svg?style=svg)](https://circleci.com/gh/orion46/exlist)
+[![CircleCI](https://circleci.com/gh/orion46/exlist/tree/master.svg?style=svg)](https://circleci.com/gh/orion46/exlist/tree/master)
 
 This is a wrapper of Python's List.
 You can use `map`, `filter` and `fold` succesively by method chain.
